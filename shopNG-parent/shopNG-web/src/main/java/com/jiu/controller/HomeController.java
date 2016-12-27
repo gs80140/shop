@@ -10,7 +10,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
  
 
-@Api(tags = { "Hello" })
+@Api(tags = { "Home" })
 @Controller
 public class HomeController
 {
@@ -22,6 +22,6 @@ public class HomeController
   {
       logger.info("hello");
       model.addAttribute("name", "");
-      return "index";
+      return "home/home";
   }
 }
